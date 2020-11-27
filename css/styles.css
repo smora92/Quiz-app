@@ -1,0 +1,39 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  color: #fde3a7;
+  background-color: #000;
+}
+#start h1 {
+  font-size: 50px;
+}
+.container {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+}
+
+.btn {
+  border: 1px solid cyan;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 5px 15px;
+  color: #000036;
+  margin: 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
