@@ -170,6 +170,8 @@ function restartQuiz() {
   STORE.hasFeedback = false;
   $("#restart").click((e) => {
     e.preventDefault();
+    $("#next").text("Next Question");
+
     STORE.score = 0;
     STORE.currentQuestion = 0;
     STORE.started = false;
