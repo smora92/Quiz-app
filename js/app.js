@@ -57,8 +57,9 @@ function renderQuestion() {
   $("#quiz").show();
   const question = STORE.questions[STORE.currentQuestion];
   const totalNumberOfQuestions = STORE.questions.length;
-  $("#progress").text(
-    `Question ${STORE.currentQuestion + 1} / ${totalNumberOfQuestions}`
+  $("#progress").html(
+    `Question ${STORE.currentQuestion + 1} / ${totalNumberOfQuestions}<br>
+      Score: ${STORE.score} out of ${STORE.questions.length}`
   );
   $("#quiz h2#question").text(question.title);
   $("#choices").html("");
@@ -160,9 +161,9 @@ function summary() {
   //this function will be responsible for displaying the total score once the user has finished the quiz
   nextQuestion().hide();
   $("#results").show();
-  $("#results p").text(
-    `You scored ${STORE.score} out of ${STORE.questions.length}`
-  );
+  // $("#results p").text(
+  //   `You scored ${STORE.score} out of ${STORE.questions.length}`
+  // );
 }
 
 function restartQuiz() {
